@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.account.LoginActivity">
+
+    <EditText
+        android:id="@+id/et_user"
+        android:hint="输入账户"
+        android:paddingLeft="10dp"
+        android:background="@drawable/no_bj"
+        android:maxLines="1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/et_pass"
+        android:hint="输入密码"
+        android:paddingLeft="10dp"
+        android:password="true"
+        android:maxLength="6"
+        android:background="@drawable/no_bj"
+        android:maxLines="1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/login"
+        android:background="@drawable/bj"
+        android:layout_marginTop="20dp"
+        android:text="登录"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/go_register"
+        android:layout_marginTop="20dp"
+        android:textColor="#9C27B0"
+        android:text="没有账户立即注册？"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

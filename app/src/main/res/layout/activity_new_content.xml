@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.NewContentActivity">
+    <androidx.appcompat.widget.Toolbar
+        app:title="新闻详情页"
+        android:background="#FFEB3B"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+   <androidx.core.widget.NestedScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:gravity="center_horizontal"
+           android:padding="10dp"
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <TextView android:id="@+id/news_title"
+               android:textStyle="bold"
+               android:textSize="20dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+           <ImageView
+               android:id="@+id/news_image"
+               android:layout_width="match_parent"
+               android:layout_height="200dp"/>
+           <TextView
+               android:id="@+id/news_content"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+
+       </LinearLayout>
+   </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

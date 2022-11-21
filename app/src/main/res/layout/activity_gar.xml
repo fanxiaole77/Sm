@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.Gar.GarActivity">
+    <androidx.appcompat.widget.Toolbar
+        app:title="垃圾分类"
+        android:background="#ff0"
+        android:id="@+id/c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.youth.banner.Banner
+                android:id="@+id/g_banner"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+           <LinearLayout
+               android:layout_marginTop="10dp"
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <Button
+                   android:id="@+id/btn_sv"
+                   android:text="搜索"
+                   android:layout_weight="1"
+                   android:background="@drawable/no_bj"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+               <Button
+                   android:text="分类"
+                   android:layout_weight="1"
+                   android:background="@drawable/no_bj"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+           </LinearLayout>
+          <androidx.viewpager.widget.ViewPager
+              android:layout_marginTop="10dp"
+              android:id="@+id/v2"
+              android:layout_width="match_parent"
+              android:layout_height="800dp">
+              <com.google.android.material.tabs.TabLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/t2"
+                  android:background="#B5AFAF"/>
+
+
+          </androidx.viewpager.widget.ViewPager>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

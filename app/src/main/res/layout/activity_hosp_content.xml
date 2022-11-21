@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".ui.activity.hosp.HospContentActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        app:title="医院详情页"
+        android:id="@+id/h"
+        android:background="#ff0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="20sp"
+        android:layout_width="350dp"
+        android:layout_height="500dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.youth.banner.Banner
+                android:id="@+id/h_banner"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"/>
+            <TextView
+                android:id="@+id/h_content"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"/>
+
+            <Button
+                android:background="@drawable/bj"
+                android:id="@+id/h_btn"
+                android:layout_marginTop="20dp"
+                android:text="预约体检"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
